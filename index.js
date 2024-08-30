@@ -39,8 +39,8 @@ const displayEntries=()=>{
     <th class="px-4 py-2">Name</th>
     <th class="px-4 py-2">Email</th>
     <th class="px-4 py-2">Password</th>
-    <th class="px-4 py-2">dob</th>
-    <th class="px-4 py-2">accpeted terms?</th>
+    <th class="px-4 py-2">Dob</th>
+    <th class="px-4 py-2">Accpeted terms?</th>
     </tr>${entries} </table>`;
     let details=document.getElementById("user-entries");
     details.innerHTML=table;
