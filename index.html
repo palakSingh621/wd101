@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input#name:invalid:focus{
+            border: 2px solid red;
+        }
+        input#email:invalid:focus{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative flex min-h-screen flex-col justify-center overflow-hidden py-6 bg-gray-50">
+
+        <div class="relative bg-white px-6 pt-5 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+            <div class="max-auto max-w-md">
+                <h2 class="text-3xl text-center font-bold leading-tight">Registration Form</h2>
+
+                <div class="divide-y divide-gray-300/50">
+                    <div class="space-y-6 py-8 text-base leading-7 text-gray-600">
+                        
+                        <form id="user_form">
+                            <label for="name" class="text-md w-40 inline-block font-medium leading-7 text-gray-600">Name</label>
+                            <input required type="text" id="name" name="name" class="bg-gray-50 inline-block rounded-lg shadow-md px-4 py-3 mb-5 text-base leading-7 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition easy-in-out" placeholder="Enter Username" >
+                            </br>
+
+                            <label for="email" class="text-md w-40 inline-block font-medium leading-7 text-gray-600">Email</label>
+                            <input required type="email" id="email" name="email" class="bg-gray-50 inline-block rounded-lg shadow-md px-4 py-3 mb-5 text-base leading-7 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition easy-in-out" placeholder="abc@mail.com">
+                            </br>
+
+                            <label for="password" class="text-md w-40 inline-block font-medium leading-7 text-gray-600">Password</label>
+                            <input required type="password" id="password" name="password" class="bg-gray-50 inline-block rounded-lg shadow-md px-4 py-3 mb-5 text-base leading-7 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition easy-in-out" placeholder="Type password here">
+                            </br>
+
+                            <label for="dob" class="text-md w-40 inline-block font-medium leading-7 text-gray-600">Date Of Birth</label>
+                            <input required type="Date" id="dob" name="dob" class="bg-gray-50 inline-block rounded-lg shadow-md px-4 py-3 mb-5 text-base leading-7 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition easy-in-out">
+                            </br>
+
+                            <label for="acceptTerms" class="text-md w-60 inline-block font-medium leading-7 text-gray-600">Accept Terms & Conditions</label>
+                            <input required type="checkbox" id="acceptTerms" name="acceptTerms">
+                            </br>
+
+                            <button id="submit" type="submit" class="w-fit rounded-lg shadow-lg px-4 py-3 bg-green-400 text-white hover:bg-green-400 focus:outline-none">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="user-entries"></div>
+    <script src="index.js"></script>
+</body>
+</html>
