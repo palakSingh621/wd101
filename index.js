@@ -35,13 +35,22 @@ const displayEntries=()=>{
             return row;
         }).join("\n");
     }
-    var table=`<table class="table-auto w-full"><tr>
-    <th class="px-4 py-2">Name</th>
-    <th class="px-4 py-2">Email</th>
-    <th class="px-4 py-2">Password</th>
-    <th class="px-4 py-2">Dob</th>
-    <th class="px-4 py-2">Accpeted terms?</th>
-    </tr>${entries} </table>`;
+    var table=`<div class="flex justify-center">
+        <div class="relative bg-white px-6 pt-5 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg inline-block">
+            <table class="table-auto w-full">
+            <thead>
+                <tr>
+                <th class="px-4 py-2">Name</th>
+                <th class="px-4 py-2">Email</th>
+                <th class="px-4 py-2">Password</th>
+                <th class="px-4 py-2">Dob</th>
+                <th class="px-4 py-2">Accepted terms?</th>
+                </tr>
+            </thead>
+            <tbody> ${entries}</tbody>
+            </table>
+        </div>
+    </div>`;
     let details=document.getElementById("user-entries");
     details.innerHTML=table;
 };
